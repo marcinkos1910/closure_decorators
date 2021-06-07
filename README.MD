@@ -61,4 +61,15 @@
 
 ##How to create:
 1. Create function using closure
-2. Add annotation with at and name of decorator above decorated function
+2. Add annotation with "at" and name of decorator above decorated function
+
+## Rules
+- you can use multiple decorators to decorate one function
+-order of decoration is from the nearest decorator function to the furthest-
+-you can pass parameter to decorator using double closure in declaration
+  - order of parameters in duble closure:
+    -parameters of decorator
+    -decorated function
+    -parametrs of decorated function
+# Dictionary
+- iPython - interactive python
