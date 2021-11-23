@@ -67,9 +67,9 @@
 - you can use multiple decorators to decorate one function
 - order of decoration is from the nearest decorator function to the furthest
 - you can pass parameter to decorator using double closure in declaration
-- order of parameters in duble closure:
+- order of parameters in double closure:
     - parameters of decorator
     - decorated function
-    - parametrs of decorated function
+    - parameters of decorated function
 # Dictionary
 - iPython - interactive python

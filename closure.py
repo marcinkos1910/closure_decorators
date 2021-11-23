@@ -8,8 +8,8 @@ def sentence(name):
     return full_sentence
 
 
-# # s = sentence("Pawel")
-# # print(s("Krakow"))
+s = sentence("Pawel")
+print(s("Krakow"))
 
 
 # uuid - universal unique identifier
@@ -47,5 +47,23 @@ print(power_4(2))
 print('power_4 what is in closure', power_4.__closure__[0].cell_contents)
 print(power_7(2))
 print('power_7 what is in closure', power_7.__closure__[0].cell_contents)
+
+
+def fn(func):
+    def wrapper(a):
+        def inner(n):
+            return func(a) ** n
+        return inner
+    return wrapper
+
+
+@fn
+def fn_dec(a):
+    return a
+
+
+p = fn_dec(3)
+print(p(3))
+print(p(4))
 
 
